@@ -1,0 +1,33 @@
+@mixin PhysioMainBg1 {
+    background-color: #d4e4ef;
+    @include filter-gradient(#d4e4ef, #86aecc, vertical);
+    $experimental-support-for-svg: true;
+    @include background-image(linear-gradient(top,  #d4e4ef 0%,#86aecc 100%));
+   	@include box-shadow(0px 0px 5px #fff inset);    
+}
+
+@mixin physioCompBg1{
+    background-color: #f2f6f8;
+    @include filter-gradient(#f2f6f8, #e0eff9, vertical);
+    $experimental-support-for-svg: true;
+    @include background-image(linear-gradient(top,  #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%));
+}
+
+$physioMainColor1: #6d88b7;
+
+$main1:#838F7B; //DEPRECATED
+
+$comp1:#EDEDE5;
+
+$sofBackground:rgb(255,255,255);
+$sofWhite:rgb(255,255,255);
+$sofMain1:rgb(179,93,30);
+
+$sofComp1:rgb(131,142,123);
+$sofComp2:rgb(230,230,230);
+
+$sofTextColorMain:rgb(29,29,27);
+
+$sofTextColorComp1:rgb(131,142,123);
+$sofTextColorComp2:rgb(255,255,255);
+$sofTextColorHeading:$sofMain1;

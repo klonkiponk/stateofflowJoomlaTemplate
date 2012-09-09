@@ -1,0 +1,41 @@
+@import "compass";
+@import "compass/reset";
+@import "fonts";
+@import "colors";
+@import "sofWrapper";
+@import "sofHeader";
+@import "sofNavMain";
+@import "sofNavSub";
+@import "sofInnerWrapper";
+@import "sofArticle";
+@import "sofAside";
+@import "sofFooter";
+@import "sofAsideWrapper";
+@import "sofNavSub";
+@import "sofNavBreadcrumb";
+@import "joomlaCore";
+@import "loginForm";
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size:0.9em;
+	color:#333;
+    background:	$sofBackground;
+    font-weight: 200;
+}
+strong {
+    font-weight: bold;
+}
+
+hr {
+	visibility:hidden;
+	clear:both;
+	height:0;
+	margin:0;
+	padding:0;
+	width:0;
+	border:none;
+}
+
+
+
+

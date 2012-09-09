@@ -1,0 +1,29 @@
+$sofHeaderHeight:165px;
+
+#sofHeader {
+
+    //Debug for Layouting
+    //border:2px solid $main1;
+    //    
+    //@include border-radius(5px 5px 0px 0px);
+    #sofLogo {
+        float:left;
+        width:190px;
+        text-align: center;
+        background:$sofComp2;
+        height:$sofHeaderHeight;
+        img {
+            display:block;
+            margin:0px auto;
+            margin-top: 40px;
+        }
+    }
+    #sofImage {
+        width:804px;
+        height:$sofHeaderHeight;
+        float:left;
+        background: url('../img/sofImage.png');
+        border-left:6px solid $sofTextColorComp2;
+    }
+
+}//end of header

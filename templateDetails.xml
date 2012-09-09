@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+
+<extension version="2.5" type="template" method="upgrade">
+	
+	<name>stateofflow</name>
+	<creationDate>2012-09-01</creationDate>
+	<author>Kevin Siegerth</author>
+	<copyright>Copyright © 2012 stateofflow.com</copyright>
+	<authorEmail>kevin@siegerth.com</authorEmail>
+	<authorUrl>http://www.siegerth.com</authorUrl>
+	<version>1.0.0</version>
+	<description><![CDATA[ 
+		<h1>stateofflow</h1>
+		<p><img src="../templates/templatename/template_preview.png" /></p>
+		<h2>Module positions</h2>
+		<ol>
+			<li>debug</li>
+		</ol>
+		<p>Created by <a href="http://www.siegerth.com" target="_blank">Kevin Siegerth | siegerth.com</a>.</p>
+	]]></description>
+	
+	<files>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.php</filename>
+		<filename>offline.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+	
+	<positions>
+		<position>sofNavMain</position>
+		<position>sofNavSub</position>
+		<position>sofAside</position>		
+	</positions>	
+</extension>

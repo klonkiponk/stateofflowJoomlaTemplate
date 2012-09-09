@@ -1,0 +1,118 @@
+@mixin paneTogglerMain {
+    background:$sofComp2 url(../img/sofMenuActive.png) left center no-repeat;
+    border:1px solid $sofComp1;
+    padding:10px;
+    padding-left: 40px;
+    margin-bottom:10px;
+    a {
+        text-decoration: none;
+        color:$sofComp1;
+        display:block;
+        @include text-shadow(1px 1px 0px $sofWhite);
+    }
+}
+
+.pane-slider {
+    background:#F2F2F2;
+    padding:5px;
+    ol a {
+        color:$sofMain1;
+        text-decoration: none;
+    }
+    dt {
+        font-weight: bold;        
+    }
+}   
+
+#sofArticle {
+    //Debug for Layouting
+    //border:2px solid $main1;
+    //
+    
+    font-size:0.9em;
+    
+    min-height:400px;
+    
+    margin-left:190px;
+    @include box-sizing(border-box);
+    background:#fff;
+    padding:40px;
+    padding-top: 30px;
+    padding-right:240px; //Testimential, should be steered with margin and not with padding...    
+    h1 {
+//        @include text-shadow(1px 1px 0px #333, 2px 2px 0px #fff, 3px 3px 0px #555);
+        font-size:3em;
+        color:$sofMain1;
+        font-weight: 500;
+        font-size: 1.4em;
+    }
+    h2 {
+        color:$sofMain1;
+        font-weight: 500;
+        font-size: 1.2em;
+        margin-bottom: 30px;
+        padding-bottom:15px;
+        border-bottom:1px solid $sofComp1; /********************************/
+//        @include text-shadow(1px 1px 0px darkred);
+                
+        a {
+            text-decoration: none;
+            color:#333;
+        }
+    }
+    .article-info {
+        border:1px solid silver;
+        font-size:0.8em;
+        margin:5px 0px;
+        display: none;
+    }
+    .article-info-term {
+        display:none;
+    }
+    
+    .contact-image img {
+        width:170px;
+        float:right;
+        @include box-shadow(-1px 1px 5px #333);
+        margin: 10px;
+        margin-right: 5px;
+        
+    }
+    
+    #contact-slider {
+        .pane-toggler {
+           @include paneTogglerMain
+        }
+        .pane-toggler-down {
+           @include paneTogglerMain
+        }
+    }
+     
+}
+
+.profile, .profile-edit {
+    
+    input[type=text],input[type=email],input[type=password],textarea {
+        width:92%;
+        @include border-radius(2px);
+        border: 1px solid $sofComp1;
+        padding:4px;
+        @include box-shadow(1px 1px 3px #777 inset);
+    }
+    
+    select {
+        width:200px;
+    }
+    
+    dt {
+        font-weight: bold;
+    }
+    legend {
+        font-size:2em;
+        color:$sofMain1;
+        font-weight: 500;
+        font-size: 1.4em;
+        margin-bottom: 10px;
+        @include text-shadow(1px 1px 0px darkred);
+    }
+}

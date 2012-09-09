@@ -1,0 +1,61 @@
+#sofAside1 {
+
+    //Debug for Layouting
+    //border:2px solid $main1;
+    //
+    
+    
+    @include box-sizing(border-box);
+    width:200px;
+//    height: 150px;
+    padding-top: 30px;
+    a {
+        color:$sofMain1;
+        text-decoration: none;
+    }
+    
+    .latestnews {
+        border:1px solid $sofComp1;
+        background:$sofComp2;
+        padding-bottom: 10px;
+        li {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+    
+    .latestnews:before {
+        content:"News";
+        color:$sofWhite;
+        display:block;
+        background:$sofMain1;
+        padding:3px;
+        padding-left:8px;
+        font-weight: 400;
+        font-size: 0.9em;
+        margin-bottom: 10px;
+    }
+    .sofContact{
+        border:1px solid $sofComp1;
+        background:$sofComp2;
+        margin-bottom: 20px;        
+        h2 {
+            color:$sofWhite;
+            display:block;
+            background:$sofMain1;
+            padding:3px;
+            padding-left:8px;
+            font-weight: 400;
+            font-size: 0.9em;
+        }
+        address {
+        text-align: center;
+            padding:10px;   
+        }
+    }      
+}
+
+#sofAside2 {
+    @include box-sizing(border-box);
+    
+}

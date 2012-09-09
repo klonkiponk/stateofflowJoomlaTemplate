@@ -1,0 +1,13 @@
+#sofFooter {
+    background-color: $sofBackground;
+    font-size: 0.8em;
+    .copyright {
+        background:$sofComp2;
+        width:180px;
+        text-align: left;
+        padding-bottom: 10px;
+        padding-left:10px;
+        font-weight: 600;
+        font-size: 0.8em;
+    }
+}

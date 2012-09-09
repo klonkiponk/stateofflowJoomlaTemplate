@@ -1,0 +1,37 @@
+#form-login {
+    
+    //border:1px solid $sofComp2;
+    padding:5px;
+    
+    p {
+
+    }
+    
+    #form-modlgn-remember {
+        label {
+            float:left;
+        }
+    }
+
+    input[type=text],input[type=password] {
+        width:92%;
+        @include border-radius(2px);
+        border: 1px solid $sofMain1;
+        padding:4px;
+        @include box-shadow(1px 1px 3px #777 inset);
+    }
+    
+    label {
+        display:block;
+    }
+    
+}
+
+button, .button {
+        background:$sofMain1;
+        @include border-radius(2px);
+        border:$sofComp1 1px solid;
+        color:$sofWhite;
+        padding:4px 8px;
+        @include box-shadow(1px 1px 3px #777);
+    }
